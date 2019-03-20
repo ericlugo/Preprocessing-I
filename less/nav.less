@@ -1,0 +1,33 @@
+#nav-container {
+  background: #dddddd;
+  padding: 2rem 0;
+  width: 100%;
+  
+  #site-nav {
+    width: 800px;
+    margin: 0 auto;
+
+    .flex-set(row; wrap; center; center);
+
+    @media @phone-only {
+      width: 100%;
+    }
+
+    nav {
+      width: 100%;
+
+      ul {
+        .flex-set(row; wrap; space-between; center);
+
+        li a {
+          text-decoration: none;
+          color: #333333;
+
+          &:hover {
+            color: #555555;
+          }
+        }
+      }
+    }
+  }
+}

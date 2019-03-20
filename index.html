@@ -1,19 +1,198 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
   <title>My Resume</title>
-
+  
   <link rel="stylesheet" href="css/index.css">
-
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <!-- Site-wide Navigation -->
+  <div id="nav-container">
+    <div id="site-nav">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <img src="" alt="">
+    </div>
+  </div>
+
+  <!-- Content Container -->
+  <div class="container resume">
+    <header>
+      <img src="images/avatar.jpg" alt="avatar image">
+      <h1>Eric SarragaLugo</h1>
+    </header>
+    
+    <article id="longform-content">
+      <section id="bio">
+        <h1>bio</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, reiciendis vel vitae repellendus veritatis, ex labore quam alias eius accusamus ratione iste? Quas fugiat, error nulla doloremque rerum aliquam aperiam?</p>
+      </section>
+
+      <section id="experience">
+        <h1>experience</h1>
+        <div class="employer">
+          <h2 class="date"></h2>
+          <div class="detail">
+            <h1>location/position</h1>
+            <ul>
+              <li>achievement/important information</li>
+            </ul>
+          </div>
+        </div>
+        <div class="employer">
+          <h2 class="date"></h2>
+          <div class="detail">
+            <h1>location/position</h1>
+            <ul>
+              <li>achievement/important information</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <h1>education</h1>
+        <div class="institution">
+          <h2 class="date"></h2>
+          <div class="location">
+            <h1>program & name of institution</h1>
+            <ul>
+              <li>achievement/important information</li>
+            </ul>
+          </div>
+        </div>
+        <div class="institution">
+          <h2 class="date"></h2>
+          <div class="location">
+            <h1>program & name of institution</h1>
+            <ul>
+              <li>achievement/important information</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h1>skills</h1>
+        <ul>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+      </section>
+    </article>
+
+    <aside id="shortform-content">
+      <section class="contact-info">
+        <h1>personal information</h1>
+        <ul>
+          <li><address>
+            1234 somewhere lane <br>
+            nowhere az 00000 <br>
+            united states
+          </address></li>
+          <li>1+ 000-000-0000</li>
+          <li><a href="#">email@email.com</a></li>
+          <li><a href="#">link@portfolio.me</a></li>
+          <li>
+            <ul>
+              <li><a href="#" class="icon twitter">Twitter</a></li>
+              <li><a href="#" class="icon instagram">Instagram</a></li>
+              <li><a href="#" class="icon github">Github</a></li>
+              <li><a href="#" class="icon dribbble">Dribbble</a></li>
+              <li><a href="#" class="icon behance">Behance</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="software">
+        <h1>software</h1>
+        <div class="tech">
+          <h2></h2>
+          <ul class="mastery">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <!-- mastery description ==> beginner/intermediate/advanced -->
+          <p></p>
+        </div>
+        <div class="tech">
+            <h2></h2>
+            <ul class="mastery">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <!-- mastery description ==> beginner/intermediate/advanced -->
+            <p></p>
+          </div>
+      </section>
+
+      <section class="languages">
+        <h1>language</h1>
+        <div class="language">
+          <h2></h2>
+          <!-- mastery description ==> beginner/intermediate/advanced -->
+          <p></p>
+        </div>
+      </section>
+
+      <section class="interests">
+          <h1>interests</h1>
+          <ul>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum dolor.</li>
+          </ul>
+      </section>
+    </aside>
+  </div>
+
+  <!-- Site-wide Footer -->
+  <footer id="site-footer">
+    <div id="footer-wrap">
+      <ul class="copyright">
+        <li>&copy; 2019</li>
+        <!-- Attribution goes here if needed -->
+      </ul>
+      <ul class="icons">
+        <li><a href="#" class="icon twitter">Twitter</a></li>
+        <li><a href="#" class="icon instagram">Instagram</a></li>
+        <li><a href="#" class="icon github">Github</a></li>
+        <li><a href="#" class="icon dribbble">Dribbble</a></li>
+        <li><a href="#" class="icon behance">Behance</a></li>
+        <li><a href="me@ericlugo.design" class="icon envelope-open">Email</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
