@@ -1,0 +1,70 @@
+.resume {
+  width: 800px;
+  margin: 5rem auto;
+
+  .flex-set(row; wrap; flex-start; center);
+
+  @media @phone-only {
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+    margin: 1rem 0;
+
+    .flex-set(row; wrap; space-between; center);
+
+    img {
+      width: 10rem;
+      border-radius: 50%;
+      border: .5rem solid black;
+    }
+    h1 {
+      font-size: 5rem;
+      margin: auto 0;
+    }
+  }
+
+  #longform-content {
+    width: 63%;
+    margin: auto;
+    padding: 0;
+
+    @media @phone-only {
+      width: 100%;
+    }
+    
+    #experience {
+      .longform-boxing();
+    }
+    #education {
+      .longform-boxing();
+    }
+    #skills {
+      .longform-boxing();
+    }
+  }
+  #shortform-content {
+    margin: auto;
+    padding: 2rem;
+    background: #dddddd;
+    width: 33%;
+
+    @media @phone-only {
+      width: 100%;
+    }
+
+    .contact-info {
+      .shortform-boxing();
+    }
+    .software {
+      .shortform-boxing();
+    }
+    .languages {
+      .shortform-boxing();
+    }
+    .interests {
+      .shortform-boxing();
+    }
+  }
+}
